@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Ping Plugin
+Bundle-SymbolicName: org.ambientdynamix.contextplugins.pingplugin
+Bundle-Version: 1.0.0
+Export-Package: org.ambientdynamix.contextplugins.deviceinfo
+Import-Package: org.ambientdynamix.api.application,
+ org.ambientdynamix.api.contextplugin,
+ org.ambientdynamix.api.contextplugin.security
+DynamicImport-Package: *
