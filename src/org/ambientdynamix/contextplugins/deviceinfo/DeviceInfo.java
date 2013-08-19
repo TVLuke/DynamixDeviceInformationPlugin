@@ -152,11 +152,23 @@ public class DeviceInfo implements IContextInfo
 		}
 		else if (format.equalsIgnoreCase("XML"))
 		{
-			return "<ping>"+ipv4+"</ping>";
+			return "<device>" +
+				   "    <ip4>"+ipv4+"</ip4>" +
+				   "    <ip6>"+ipv6+"</ip6>" +
+				   "    <mac>"+mac+"</mac>" +
+				   "    <osVersion>"+osVersion+"</osVersion>" +
+				   "    <apiLevel>"+apiLevel+"</apiLevel>" +
+				   "    <deviceType>"+deviceType+"</deviceType>" +
+				   "    <product>"+product+"</product>" +
+				   "    <brand>"+brand+"</brand>" +
+				   "    <manufacturer>"+manufacturer+"</manufacturer>" +
+				   "    <serial>"+serial+"</serial>" +
+				   "    <board>"+board+"</board>" +
+				   "</device>";
 		}
 		else if (format.equalsIgnoreCase("JSON"))
 		{
-			return "ping: "+ipv4;
+			return "ipv4: "+ipv4;
 		}
 		else
 			return null;
